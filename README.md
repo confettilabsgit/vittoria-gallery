@@ -1,40 +1,45 @@
 # Vittoria Ceretti Gallery
 
-An elegant photo gallery showcasing Vittoria Ceretti.
+An elegant Instagram feed showcasing posts from Vittoria Ceretti's official account (@vittoria).
 
 ## Features
 
-✨ Clean, minimalist design  
-🖼️ Masonry grid layout  
-🔍 Lightbox view with navigation  
-⌨️ Keyboard shortcuts (arrow keys, ESC)  
-📱 Fully responsive
+✨ Official Instagram embeds (legal & proper attribution)  
+🖼️ Clean grid layout  
+📱 Fully responsive  
+⚡ Uses Instagram's native embed player  
+✅ Auto-updates with likes/comments from Instagram
 
-## How to Add Real Images
+## How to Add More Posts
 
-The site currently uses placeholder fashion images. To add actual Vittoria Ceretti photos:
+1. Go to [instagram.com/vittoria](https://www.instagram.com/vittoria)
+2. Click on any post
+3. Copy the URL (looks like: `https://www.instagram.com/p/ABC123/`)
+4. Add it to the `instagramPosts` array in `script.js`
 
-### Option 1: Manual (Simple)
-Edit `script.js` and replace the URLs in `fallbackImages` array with:
-- Getty Images embeds
-- Instagram photo URLs (with permission)
-- Your own hosted images
-
-### Option 2: Unsplash API (Free)
-1. Get a free API key at [unsplash.com/developers](https://unsplash.com/developers)
-2. Add to `script.js`: `const UNSPLASH_ACCESS_KEY = 'your_key_here';`
-3. Search query will be 'vittoria ceretti fashion model'
-
-### Option 3: Instagram Embed
-You could also embed her Instagram posts directly (requires Instagram API or embed codes).
+Example:
+```javascript
+const instagramPosts = [
+    'https://www.instagram.com/p/C3QmKxBN8zP/',
+    'https://www.instagram.com/p/YOUR_POST_ID/',  // Add new URLs here
+    // ... add as many as you want
+];
+```
 
 ## Deploy
 
-Super simple:
-1. Push to GitHub
-2. Connect to Vercel/Netlify
-3. Deploy (no build step needed!)
+1. Push to GitHub ✓ (already done!)
+2. Import to Vercel
+3. Deploy
+4. Done!
 
-## Legal Note
+No API keys or backend needed - Instagram's embed script handles everything.
 
-Make sure you have rights to use any images you add! This is a fan gallery template.
+## Legal
+
+✅ Uses official Instagram embeds  
+✅ Proper attribution to source  
+✅ Follows Instagram's terms of service  
+✅ No copyright issues
+
+This is the correct, legal way to display Instagram content on your site!
